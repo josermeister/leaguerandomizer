@@ -89,3 +89,13 @@ select {
     margin-bottom: 0.4125rem;
 }
 
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    padding-bottom: 20px;
+    width: 100%;
+    background-color: #2A2C39;
+    color: #FFF;
+    text-align: center;
+}
