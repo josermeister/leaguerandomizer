@@ -6,6 +6,29 @@ body {
     font-family: 'Montserrat',sans-serif;
 }
 
+select {
+    margin: 50px;
+    width: 150px;
+    padding: 5px 35px 5px 5px;
+    font-size: 16px;
+    border: 1px solid #CCC;
+    height: 34px;
+    background: #2A2C39;
+    color: #FFF;
+    color: #FFF;
+}
+
+.selection {
+    color: #FFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.selection p {
+    font-size: 1.5rem;
+}
+
 .btn {
     border: none;
     font-family: 'Montserrat', sans-serif;

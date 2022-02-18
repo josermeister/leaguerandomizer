@@ -1,4 +1,5 @@
 const showChamp = document.getElementById('champPickElement');
+const typeOfChamp = document.getElementById('underlined');
 
 const champs = [
     "Aatrox",
@@ -163,37 +164,273 @@ const champs = [
 ];
 
 const adcChamps = [
-    "Samira",
-    "Caitlyn",
+    "Aphelios",
     "Ashe",
+    "Caitlyn",
+    "Corki",
+    "Draven",
     "Ezreal",
-    "Vayne",
+    "Graves",
     "Jhin",
-    "Kog'Maw",
-    "Ezreal",
-    "Lucian",
-    "Twitch",
     "Jinx",
     "Kai'Sa",
-    "Tristana",
-    "Draven",
-    "Sivir",
-    "Xayah",
-    "Miss Fortune",
     "Kalista",
-    "Aphelios"
+    "Kindred",
+    "Kog'Maw",
+    "Lucian",
+    "Miss Fortune",
+    "Samira",
+    "Senna",
+    "Quinn",
+    "Sivir",
+    "Tristana",
+    "Twitch",
+    "Varus",
+    "Vayne",
+    "Xayah"
+];
+
+const supportChamps = [
+    "Alistar",
+    "Bard",
+    "Blitzcrank",
+    "Brand",
+    "Braum",
+    "Galio",
+    "Janna",
+    "Karma",
+    "Leona",
+    "Lulu",
+    "Lux",
+    "Malphite",
+    "Maokai",
+    "Morgana",
+    "Nami",
+    "Nautilus",
+    "Pantheon",
+    "Poppy",
+    "Pyke",
+    "Rakan",
+    "Renata Gasc",
+    "Senna",
+    "Sett",
+    "Shaco",
+    "Shen",
+    "Sona",
+    "Soraka",
+    "Swain",
+    "Tahm Kench",
+    "Taric",
+    "Thresh",
+    "Vel'Koz",
+    "Xerath",
+    "Yuumi",
+    "Zac",
+    "Zilean",
+    "Zyra"
+];
+
+const midChamps = [
+    "Aatrox",
+    "Aahri",
+    "Akali",
+    "Akshan",
+    "Anivia",
+    "Annie",
+    "Aurelion Sol",
+    "Azir",
+    "Camille",
+    "Cassiopeia",
+    "Cho'Gath",
+    "Corki",
+    "Diana",
+    "Ekko",
+    "Fizz",
+    "Galio",
+    "Garen",
+    "Heimerdinger",
+    "Irelia",
+    "Ivern",
+    "Jayce",
+    "Kassadin",
+    "Katarina",
+    "LeBlanc",
+    "Lillia",
+    "Lissandra",
+    "Lucian",
+    "Lux",
+    "Malphite",
+    "Malzahar",
+    "Neeko",
+    "Nocturne",
+    "Nunu & Willump",
+    "Orianna",
+    "Pantheon",
+    "Pyke",
+    "Qiyana",
+    "Ryze",
+    "Renekton",
+    "Rumble",
+    "Swain",
+    "Sylas",
+    "Syndra",
+    "Talon",
+    "Twisted Fate",
+    "Veigar",
+    "Vel'Koz",
+    "Viktor",
+    "Vladimir",
+    "Xerath",
+    "Yasuo",
+    "Zed",
+    "Ziggs",
+    "Zilean",
+    "Zoe",
+];
+
+const jungleChamps = [
+    "Amumu",
+    "Diana",
+    "Dr.Mundo",
+    "Ekko",
+    "Elise",
+    "Evelynn",
+    "Fiddlesticks",
+    "Gragas",
+    "Graves",
+    "Hecarim",
+    "Ivern",
+    "Jarvan IV",
+    "Jax",
+    "Karthus",
+    "Kayn",
+    "Kha'Zix",
+    "Kindred",
+    "Kled",
+    "Lee Sin",
+    "Lillia",
+    "Master Yi",
+    "Nidalee",
+    "Nocturne",
+    "Nunu",
+    "Olaf",
+    "Poppy",
+    "Rammus",
+    "Rek'Sai",
+    "Rengar",
+    "Sejuani",
+    "Sett",
+    "Shaco",
+    "Shyvana",
+    "Skarner",
+    "Sylas",
+    "Taliyah",
+    "Trundle",
+    "Udyr",
+    "Vi",
+    "Viego",
+    "Volibear",
+    "Warwick",
+    "Wukong",
+    "Xin Zhao",
+    "Zac",
+];
+
+const topChamps = [
+    "Aatrox",
+    "Akali",
+    "Camille",
+    "Cassiopeia",
+    "Cho'Gath",
+    "Darius",
+    "Dr.Mundo",
+    "Fiora",
+    "Gangplank",
+    "Garen",
+    "Gnar",
+    "Gwen",
+    "Hecarim",
+    "Heimerdinger",
+    "Illaoi",
+    "Irelia",
+    "Jax",
+    "Jayce",
+    "Karma",
+    "Kayle",
+    "Kennen",
+    "Kled",
+    "Lillia",
+    "Lucian",
+    "Malphite",
+    "Maokai",
+    "Mordekaiser",
+    "Nasus",
+    "Nocturne",
+    "Olaf",
+    "Ornn",
+    "Pantheon",
+    "Poppy",
+    "Quinn",
+    "Renekton",
+    "Rengar",
+    "Riven",
+    "Rumble",
+    "Ryze",
+    "Sett",
+    "Shen",
+    "Singed",
+    "Sion",
+    "Sylas",
+    "Teemo",
+    "Tryndamere",
+    "Urgot",
+    "Vayne",
+    "Vladimir",
+    "Volibear",
+    "Wukong",
+    "Yasuo",
+    "Yorick",
+    "Zac"
 ];
 
 function randomChampion(){
-    const randomPickGeneral = Math.floor(Math.random() * 159);
+    // generating random number for all of the League champions
+    const randomPickGeneral = Math.floor(Math.random() * champs.length);
+    // generating random number for ADC champions.
+    const randomPickADC = Math.floor(Math.random() * adcChamps.length);
+    // generating random number for Support champions.
+    const randomPickSupport = Math.floor(Math.random() * supportChamps.length);
+    // generating random number for Mid champions.
+    const randomPickMid = Math.floor(Math.random() * midChamps.length);
+    // generating random number for Jungle champions.
+    const randomPickJungle = Math.floor(Math.random() * jungleChamps.length);
+    // generating random number for Top champions.
+    const randomPickTop = Math.floor(Math.random() * topChamps.length);
 
     // testing the if selected in javascript
     if(document.getElementById('championRole').value == "adc") {
-        console.log("adc selected");
+        typeOfChamp.innerText = "Your ADC Champ:"
+        showChamp.innerText = adcChamps[randomPickADC];
     }
     if(document.getElementById('championRole').value == "general") {
+        typeOfChamp.innerText = "Your Random Champ:"
         showChamp.innerText = champs[randomPickGeneral];
-        console.log("general selected");
+    }
+    if(document.getElementById('championRole').value == "support") {
+        typeOfChamp.innerText = "Your Support Champ:"
+        showChamp.innerText = supportChamps[randomPickSupport];
+    }
+    if(document.getElementById('championRole').value == "mid") {
+        typeOfChamp.innerText = "Your Mid Champ:"
+        showChamp.innerText = midChamps[randomPickMid];
+    }
+    if(document.getElementById('championRole').value == "jungle") {
+        typeOfChamp.innerText = "Your Jungle Champ:"
+        showChamp.innerText = jungleChamps[randomPickJungle];
+    }
+    if(document.getElementById('championRole').value == "top") {
+        typeOfChamp.innerText = "Your Top Champ:"
+        showChamp.innerText = topChamps[randomPickTop];
     }
 
 }
