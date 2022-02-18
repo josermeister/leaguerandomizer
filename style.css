@@ -57,3 +57,12 @@ body {
 #underlined {
     text-decoration: underline;
 }
+
+#champPickElement {
+    line-height: 1;
+    margin-top: 0;
+    color: #fff;
+    font-size: 3em;
+    margin-bottom: 0.4125rem;
+}
+

@@ -162,8 +162,38 @@ const champs = [
     "Zyra"
 ];
 
+const adcChamps = [
+    "Samira",
+    "Caitlyn",
+    "Ashe",
+    "Ezreal",
+    "Vayne",
+    "Jhin",
+    "Kog'Maw",
+    "Ezreal",
+    "Lucian",
+    "Twitch",
+    "Jinx",
+    "Kai'Sa",
+    "Tristana",
+    "Draven",
+    "Sivir",
+    "Xayah",
+    "Miss Fortune",
+    "Kalista",
+    "Aphelios"
+];
+
 function randomChampion(){
-    const randomPick = Math.floor(Math.random() * 160);
-    showChamp.innerText = champs[randomPick];
-    // return champs[randomPick];
+    const randomPickGeneral = Math.floor(Math.random() * 159);
+
+    // testing the if selected in javascript
+    if(document.getElementById('championRole').value == "adc") {
+        console.log("adc selected");
+    }
+    if(document.getElementById('championRole').value == "general") {
+        showChamp.innerText = champs[randomPickGeneral];
+        console.log("general selected");
+    }
+
 }
