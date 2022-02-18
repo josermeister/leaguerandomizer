@@ -53,3 +53,7 @@ body {
 .color-emphasis-1 {
     color: #FF4056;
 }
+
+#underlined {
+    text-decoration: underline;
+}
