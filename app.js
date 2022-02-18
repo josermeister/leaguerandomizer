@@ -163,7 +163,7 @@ const champs = [
 ];
 
 function randomChampion(){
-    const randomPick = Math.floor(Math.random() * 8);
+    const randomPick = Math.floor(Math.random() * 160);
     showChamp.innerText = champs[randomPick];
     // return champs[randomPick];
 }
