@@ -1,3 +1,6 @@
+This is an Updated version for patch 13.13 of the original code
+You can visit the original code at: https://github.com/roguepanther/leaguerandomizer
+
 # League of Legends Randomizer
 
 - Visit https://roguepanther.github.io/leaguerandomizer/ to take it for a test drive
