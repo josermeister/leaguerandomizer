@@ -15,6 +15,7 @@ const champs = [
     "Aurelion Sol",
     "Azir",
     "Bard",
+    "Bel'Veth",
     "Blitzcrank",
     "Brand",
     "Braum",
@@ -61,6 +62,7 @@ const champs = [
     "Kayle",
     "Kayn",
     "Kennen",
+    "K'Sante",
     "Kha'Zix",
     "Kindred",
     "Kled",
@@ -77,6 +79,7 @@ const champs = [
     "Malzahar",
     "Maokai",
     "Master Yi",
+    "Milio",
     "Miss Fortune",
     "Mordekaiser",
     "Morgana",
@@ -85,6 +88,7 @@ const champs = [
     "Nautilus",
     "Neeko",
     "Nidalee",
+    "Nilah",
     "Nocturne",
     "Nunu & Willump",
     "Olaf",
@@ -170,7 +174,6 @@ const adcChamps = [
     "Corki",
     "Draven",
     "Ezreal",
-    "Graves",
     "Jhin",
     "Jinx",
     "Kai'Sa",
@@ -179,6 +182,7 @@ const adcChamps = [
     "Kog'Maw",
     "Lucian",
     "Miss Fortune",
+    "Nilah",
     "Samira",
     "Senna",
     "Quinn",
@@ -187,7 +191,8 @@ const adcChamps = [
     "Twitch",
     "Varus",
     "Vayne",
-    "Xayah"
+    "Xayah",
+    "Yasuo"
 ];
 
 const supportChamps = [
@@ -204,6 +209,7 @@ const supportChamps = [
     "Lux",
     "Malphite",
     "Maokai",
+    "Milio",
     "Morgana",
     "Nami",
     "Nautilus",
@@ -290,6 +296,7 @@ const midChamps = [
 
 const jungleChamps = [
     "Amumu",
+    "Bel'Veth",
     "Diana",
     "Dr.Mundo",
     "Ekko",
@@ -359,6 +366,7 @@ const topChamps = [
     "Kayle",
     "Kennen",
     "Kled",
+    "K'Sante",
     "Lillia",
     "Lucian",
     "Malphite",
