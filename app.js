@@ -191,6 +191,7 @@ const adcChamps = [
     "Twitch",
     "Varus",
     "Vayne",
+    "Veigar",
     "Xayah",
     "Yasuo"
 ];
@@ -229,6 +230,7 @@ const supportChamps = [
     "Taric",
     "Thresh",
     "Vel'Koz",
+    "Veigar",
     "Xerath",
     "Yuumi",
     "Zac",
